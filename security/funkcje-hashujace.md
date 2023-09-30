@@ -16,3 +16,8 @@ for alg in hashlib.algorithms_available:
                 print("Exception: ", alg)
 
 ```
+
+kod uwierzytelniający hmac dla wiadomosci message i klucza x5GSOoGh1JHbgGAW0O0F.
+```bash
+echo -n "message" | openssl dgst -sha512 -hmac x5GSOoGh1JHbgGAW0O0F
+```
