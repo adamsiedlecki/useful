@@ -23,7 +23,7 @@ Szukanie algorytmu którym coś zaszyfrowano (znając klucz) jako skrypt.sh
 ```bash
 while read cipher;
 do
-    if [[ ${#cipher} -gt 8 ]] ; then
+    if [[ ${#cipher} -gt 2 ]] ; then
 	    echo "------"
 	    echo $cipher
 	    openssl enc -d -a $cipher -in data.enc -kfile pwd.pass -pbkdf2
