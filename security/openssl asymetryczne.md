@@ -77,3 +77,24 @@ Eksport klucza publicznego jako PEM (opcja armor)
 ```
 gpg --export --armor Miller Maxwell
 ```
+
+Import klucza publicznego
+```agsl
+gpg --import pub.pem
+```
+
+Zaszyfrowanie tekstu z pliku kluczem publicznym
+```agsl
+gpg --encrypt --recipient odbiorca data.txt
+```
+
+Zaszyfrowanie potoku bez znaku końca linii
+```agsl
+echo -n PHW2QMeTIY4wNmtxUNyB | gpg --encrypt --output a.encrypted --armor --recipient odbiorca
+```
+
+Odszyfrowanie pliku encrypted - gpg pyta o hasło
+```
+gpg --decrypt encrypted
+```
+
