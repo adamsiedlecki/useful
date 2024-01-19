@@ -38,6 +38,10 @@ ssh alice@10.0.4.127 -t " cat  /home/alice/secret.txt"
 Znajdowanie wszystkich programów SUID:
 ```agsl
 find . -perm /4000 
+
+albo
+
+find / -perm -u=s -type f 2>/dev/null
 ```
 
 Użycie php do hostowania danych roota:
