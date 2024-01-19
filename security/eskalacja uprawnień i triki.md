@@ -55,3 +55,7 @@ Będąc w programie more można uruchomić vi (klawisz v) oraz otworzyć inny pl
 Odczytanie pliku usuniętego, ale jakiś proces nadal go używa:
 - trzeba zidentyfikować PID procesu
 - /proc/PID/fd$ ls
+
+
+Zalogowanie się na konto z pomocą klucza pem
+ssh bob@localhost -i bob_key.pem
